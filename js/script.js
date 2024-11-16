@@ -1,3 +1,34 @@
+var doCoolStuff = function () {
+	var currentClassName = document.getElementById("cool").className;
+
+	if (currentClassName == "cool") {
+		document.getElementById("cool").className = "cool red";
+	} else {
+		document.getElementById("cool").className = "cool";
+	}
+}
+
+/*
+var RedSquare = function () {
+	var currentClassName = document.getElementById("RedSquare").className;
+	if (currentClassName == "RedSquare") {
+		document.getElementById("RedSquare").className = "RedSquare YellowCircle";
+	} else {
+		document.getElementById("RedSquare").className = "RedSquare";
+	}
+}
+*/
+
+function switchClass () {
+	var currentClassName = document.getElementById("idObject").className;
+	if (currentClassName == "RedSquare") {
+		document.getElementById("idObject").className = "RedSquare YellowCircle";
+	} else {
+		document.getElementById("idObject").className = "RedSquare";
+	}
+}
+
+
 var sayMyName = function (name) {
 	alert("My name is: "+name);
 }

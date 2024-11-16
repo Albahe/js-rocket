@@ -1,3 +1,33 @@
 body{
 	background-color: lightgoldenrodyellow;
 }
+
+.cool{
+	visibility: hidden;
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	transition: background-color 2s;
+}
+
+.cool.red{
+	visibility: visible;
+	background-color: red;
+}
+
+
+.RedSquare{
+	width: 100px;
+	height: 100px;
+	float: left;
+	position: absolute;
+	background-color: red;
+	transition: all 3s;
+}
+
+.RedSquare.YellowCircle{
+	background-color: yellow;
+	border-radius: 50px;
+	margin-left: 100px;
+	margin-top: 100px;
+}

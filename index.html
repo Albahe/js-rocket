@@ -18,6 +18,46 @@
 	</a>
 
 	</div>
+
+	<main>
+
+	<h2>How was this transformation achieved?</h2>
+	<p>This transformation was achieved using HTML, CSS, and JavaScript. Along the way, I encountered several challenges, but in the following section, I will explain the process step by step, highlighting the problems I faced and how I resolved them, accompanied by images for better understanding.</p>
+
+	<div class="nose">
+		<img src="https://github.com/Albahe/all-images-of-the-process/blob/main/Process%201.png?raw=true">
+		<p><strong>1.</strong> First, I created the HTML structure for the page that would hold the transformation, linking it to the corresponding CSS and JavaScript files. I then added an anchor <strong><small>(&lt;a&gt;)</small></strong> element with a <strong><small>&lt;div&gt;</small></strong> inside it, which would represent the red square. I set up an <strong><small>onclick</small></strong> event on the anchor, so that when the square was clicked, it would trigger the function that I would later define in the JavaScript file. To prevent the anchor from reloading the page (which would cause errors), I added <strong><small>return false</small></strong>.<br> <br>The <strong><small>&lt;div&gt;</small></strong> inside the anchor was initially styled as a red square, using a CSS class called <strong><small>RedSquare</small></strong>. The <strong><small>&lt;div&gt;</small></strong> also had an id of <strong><small>idObject</small></strong>, which would be used later in the JavaScript function to target the element.</p>
+	</div>
+
+
+	<div class="nose">
+		<img src="https://github.com/Albahe/all-images-of-the-process/blob/main/Process%202.png?raw=true">
+		<p><strong>2.</strong> Next, I wrote the initial CSS to define the color, shape, and proportions of the red square <strong><small>(.RedSquare)</small></strong>, as well as its future transformation into a yellow circle <strong><small>(.RedSquare.YellowCircle)</small></strong>. At this point, I only focused on styling the visual aspects, such as the color and shape, without specifying the position of the elements on the page. I decided to handle the positioning later, once the JavaScript function was working correctly.</p>
+	</div>
+
+	<div class="nose">
+		<img src="https://github.com/Albahe/all-images-of-the-process/blob/main/Process%203.png?raw=true">
+		<p><strong>3.</strong> Writing the JavaScript function was a challenging but essential task to make the transformation between the red square and the yellow circle work. The function, <strong><small>switchClass()</small></strong>, begins by creating a variable <strong><small>(currentClassName)</small></strong> that retrieves the current <strong><small>className</small></strong> of the element with the ID <strong><small>idObject</small></strong>. This is done using <strong><small>document.getElementById("idObject").className</small></strong>. <br> <br>Next, an <strong><small>if</small></strong> statement checks if the current class of the element is <strong><small>"RedSquare"</small></strong> (the CSS class defined earlier). If it is, the class is changed to <strong><small>"RedSquare YellowCircle"</small></strong>, triggering the transformation into a yellow circle. An <strong><small>else</small></strong> statement checks if the current class is anything other than <strong><small>"RedSquare"</small></strong> (in this case, it would be the yellow circle), so the class is reset to <strong><small>"RedSquare"</small></strong>, reverting the element back to the original red square. Now that the transformation is functional, the final task was to write the CSS to change the position of the element and make it move.</p>
+	</div>
+
+	<div class="nose">
+		<img src="https://github.com/Albahe/all-images-of-the-process/blob/main/Process%205.png?raw=true">
+		<p><strong>4.</strong> Through some trial and error, I was able to create a transition similar to the one provided in the task. To achieve this, I adjusted the <strong><small>margin</small></strong> properties to set the initial position of the shapes and specified the duration of the transition. <br> <br>At first, the element didn’t move diagonally as expected, but I resolved this by using the <strong><small>float</small></strong> property, which corrected the movement.</p>
+	</div>
+
+
+	<div class="nose">
+		<img src="https://github.com/Albahe/all-images-of-the-process/blob/main/Process%206.png?raw=true">
+		<p><strong>5.</strong> However, I wasn't satisfied with the result because the element wasn't centered on the page, nor was it responsive when the screen size changed. To address this, I decided to place the element inside a wrapper <strong><small>&lt;div&gt;</small></strong>, which I later styled with CSS to ensure proper alignment and responsiveness.</p>
+	</div>
+
+	<div class="nose">
+		<img src="https://github.com/Albahe/all-images-of-the-process/blob/main/Process%208%20final.png?raw=true">
+		<p><strong>6.</strong> After some more trial and error, I focused on centering the <strong><small>.box &lt;div&gt;</small></strong> on the page. To achieve this, I set the body properties to ensure the <strong><small>&lt;div&gt;</small></strong> was centered horizontally. Then, I applied specific styles to the <strong><small>.box</small></strong> class: I defined its height and width, added a black border to visualize it, and set its position to <strong><small>relative</small></strong>, which would be essential for positioning the square and circle within it.<br> <br>Positioning was crucial to make the red square move from the top-left corner of the <strong><small>&lt;div&gt;</small></strong> to the bottom-right corner. I adjusted the properties of the <strong><small>.RedSquare</small></strong> and <strong><small>.RedSquare.YellowCircle</small></strong> classes by removing the margins and specifying the position as <strong><small>absolute</small></strong> along with <strong><small>top</small></strong> and <strong><small>left</small></strong> values to control the placement.<br> <br>One challenge I encountered was the yellow circle going outside the bounds of the <strong><small>&lt;div&gt;</small></strong>, particularly when resizing the screen. The solution came when I applied the <strong><small>transform</small></strong> property to shift the anchor point of the yellow circle to the bottom-right corner, ensuring it stayed within the <strong><small>&lt;div&gt;</small></strong>.<br> <br>Once I was satisfied with the behavior, I made the final touch by setting the border of the <strong><small>.box &lt;div&gt;</small></strong> to transparent, removing the visual border. <strong>And voilà!</strong> The interactive transformation was successfully completed.
+	</p>
+	</div>
+
+	</main>
 	
 </body>
 </html>

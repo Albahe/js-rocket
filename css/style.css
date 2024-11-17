@@ -12,6 +12,11 @@ h1{
 	font-weight: bold;
 }
 
+h2{
+	font-size: 30px;
+	padding-top: 50px;
+}
+
 p{
 	font-size: 18px;
 	margin: 0 auto;
@@ -45,4 +50,25 @@ p{
 	top: 100%;
 	left: 100%;
 	transform: translate(-100%, -100%);
+}
+
+
+main{
+	background-color: ghostwhite;
+	width: 100%;
+}
+
+.nose img{
+	width: 100%;
+	max-width: 710px;
+}
+
+.nose p{
+	padding-left: 30px;
+	margin-top: 24px;
+	border-left: solid darkslategrey;
+	border-radius: 0,5px;
+	max-width: 480px;
+	text-align: left;
+	color: #2f2f2f;
 }

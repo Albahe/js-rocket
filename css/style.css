@@ -1,40 +1,40 @@
-body{
+body {
 	font-family: Helvetica, arial, sans-serif;
 	text-align: center;
 	margin: 0 auto;
 	justify-items: center;
 }
 
-h1{
+h1 {
 	margin-top: 60px;
 	margin-bottom: 24px;
 	font-size: 44px;
 	font-weight: bold;
 }
 
-h2{
+h2 {
 	font-size: 30px;
 	padding-top: 50px;
 }
 
-p{
+p {
 	font-size: 18px;
 	margin: 0 auto;
 	margin-bottom: 50px;
 	max-width: 600px;
 }
 
-main{
+main {
 	background-color: ghostwhite;
 	width: 100%;
 }
 
-.nose img{
+.nose img {
 	width: 100%;
 	max-width: 710px;
 }
 
-.nose p{
+.nose p {
 	padding-left: 30px;
 	margin-top: 24px;
 	border-left: solid darkslategrey;
@@ -44,18 +44,18 @@ main{
 	color: #2f2f2f;
 }
 
-.box{
+.box {
 	border-radius: 2px;
 	border: transparent;
-	position: relative;
+	position: relative; 
 	max-width: 800px;
 	width: 98%;
 	height: 400px;
 } 
 
-.RedSquare{
-	width: 150px;
-	height: 150px;
+.RedSquare {
+	width: 150px; 
+	height: 150px; 
 	background-color: red;
 	position: absolute;
 	top: 0%;
@@ -64,7 +64,7 @@ main{
 	transition: all 2s;
 }
 
-.RedSquare.YellowCircle{
+.RedSquare.YellowCircle {
 	background-color: yellow;
 	border-radius: 50%;
 	top: 100%;
